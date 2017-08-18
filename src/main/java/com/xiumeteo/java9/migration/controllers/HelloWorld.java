@@ -1,5 +1,7 @@
 package com.xiumeteo.java9.migration.controllers;
 
+//import com.sun.beans.util.Cache;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -42,5 +44,12 @@ public class HelloWorld {
             return "Weird math";
         } else
             return "Math is OK";
+    }
+
+    @RequestMapping(value = "/internalapis", method = RequestMethod.GET)
+    @ResponseBody
+    public String illegalAccessToHiddenPackages(){
+        final ClassLoader classLoader =  getClass().getClassLoader();
+        return classLoader.getName();
     }
 }
