@@ -14,7 +14,7 @@ public class HelloWorldTest {
         final String cumbersomeMath = helloWorld.getCumbersomeMath();
 
         assertNotNull(cumbersomeMath);
-        assertThat(cumbersomeMath, is("Weird math"));
+        assertThat(cumbersomeMath, is("Math is OK"));
     }
 
 }
