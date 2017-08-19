@@ -31,14 +31,14 @@ public class HelloWorld {
     public String getCumbersomeMath(){
         Integer two = 2;
 
-//        Field value = null;
-//        try {
-//            value = Integer.class.getDeclaredField("value");
-//            value.setAccessible(true);
-//            value.set(two, 3);
-//        } catch (NoSuchFieldException | IllegalAccessException e) {
-//            e.printStackTrace();
-//        }
+        Field value = null;
+        try {
+            value = Integer.class.getDeclaredField("value");
+            value.setAccessible(true);
+            value.set(two, 3);
+        } catch (NoSuchFieldException | IllegalAccessException e) {
+            e.printStackTrace();
+        }
 
         if (1 + 1 != two) {
             return "Weird math";
