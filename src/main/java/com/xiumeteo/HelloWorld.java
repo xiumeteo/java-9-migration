@@ -1,4 +1,4 @@
-package com.xiumeteo.java9.migration.controllers;
+package com.xiumeteo;
 
 //import com.sun.beans.util.Cache;
 

@@ -1,4 +1,4 @@
-package com.xiumeteo.java9.migration;
+package com.xiumeteo;
 
 
 import org.springframework.boot.SpringApplication;
